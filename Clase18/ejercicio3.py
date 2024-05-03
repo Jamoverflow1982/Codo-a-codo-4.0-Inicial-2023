@@ -6,7 +6,7 @@ entrada y un descuento en 10% sobre el total si la cantidad de entradas es mayor
 o igual a 5
 """
 
-off=10 #Descuento
+off=20 #Descuento
 
 def titulo():
     print('*'*50)

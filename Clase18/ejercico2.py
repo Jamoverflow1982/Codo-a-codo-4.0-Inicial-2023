@@ -11,7 +11,7 @@ Poner un título antes de comenzar a mostrar la tabla solicitada.
 def titulo():
     print('='*50)
     print(' TABLA DE MULTIPLICAR '.center(50,'='))
-    print('='*50)
+    print(' by J. Monzon '.rjust(50,'='))
     print()
 
 def multiplicador(num):

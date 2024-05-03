@@ -8,7 +8,7 @@ base por la altura, y dividiendo el resultado entre dos.
 def titulo():
     print('='*50)
     print(' AREA DEL TRIANGULO '.center(50,'='))
-    print('='*50)
+    print(' by J. Monzon '.rjust(50,'='))
     print()
 
 def area(base, altura):

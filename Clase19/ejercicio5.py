@@ -19,16 +19,13 @@ def titulo():
     print()
 
 def suma(num1, num2):
-    total=num1+num2
-    return total
+    return num1+num2
 
 def resta(num1, num2):
-    total=num1-num2
-    return total
+    return num1-num2
 
 def multi(num1, num2):
-    total=num1*num2
-    return total
+    return num1*num2
 
 def div(num1, num2):
     total=0
@@ -40,8 +37,7 @@ def div(num1, num2):
     return total, no
 
 def pot(num1, num2):
-    total=num1**num2
-    return total
+    return num1**num2
 
 def par(num1, num2):
     num1p=num1%2
@@ -91,7 +87,7 @@ def opcion(num):
             else:
                 print(f'La division entre {num1} y {num2} es {totaldiv:.0f}'.center(50,' '))
         case 5:
-            print(f'El numero {num1} elevado a {num2} es {pot(num1, num2)}'.center(50,' '))
+            print(f'El numero {num1} elevado a la {num2} es {pot(num1, num2)}'.center(50,' '))
         case 6:
             print(par(num1, num2).center(50,' '))
         case 7:

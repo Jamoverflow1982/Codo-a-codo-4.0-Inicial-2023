@@ -11,7 +11,7 @@ def titulo():
     print(' CALCULADORA AÑO BISIESTO '.center(50,'*'))
     print(' by J. Monzon '.rjust(50,'*'))
     print()
-    
+
 def bisiesto(anio):
     val1=anio%100
     val2=anio%4

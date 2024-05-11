@@ -1,4 +1,5 @@
-cpu=2
+import random
+cpu=random.randint(1,3)
 
 def resolver(eleccion):
     if cpu==1:

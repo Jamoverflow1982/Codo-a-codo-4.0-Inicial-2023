@@ -75,5 +75,5 @@ if cant>0:
     print()
 else:
     print(Fore.RED+'*'*50)
-    print(Fore.RED+'NO SE INGRESO NINGUN NUMERO!!!')
+    print(Fore.RED+'NO SE INGRESO NINGUN NUMERO!!!'.center(50,' '))
     print(Fore.RED+'*'*50)

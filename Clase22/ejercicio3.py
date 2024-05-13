@@ -10,6 +10,7 @@ ingrese 0. Al finalizar se deberá mostrar:
 """
 from colorama import Fore, init
 init(autoreset=True)
+import os
 
 def titulo():
     print(Fore.CYAN+'#'*50)
@@ -64,6 +65,7 @@ def suma(valor):
         imparbajo=0
     return totalpares, promnumimp, cantidad, paralto, imparbajo
 
+os.system('clear')
 titulo()
 num=float(input('Ingrese un numero (ingrese 0 para salir): '))
 pares, promim, cant, paral, impba = suma(validar(num))

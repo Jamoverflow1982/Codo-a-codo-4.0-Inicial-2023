@@ -74,4 +74,6 @@ if cant>0:
     print(Fore.GREEN+'#'*50)
     print()
 else:
-    print('NO SE INGRESO NINGUN NUMERO!!!')
+    print(Fore.RED+'*'*50)
+    print(Fore.RED+'NO SE INGRESO NINGUN NUMERO!!!')
+    print(Fore.RED+'*'*50)

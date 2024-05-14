@@ -8,7 +8,7 @@ ingrese 0. Al finalizar se deberá mostrar:
 ● El número par más alto.
 ● El número impar más bajo.
 """
-from colorama import Fore, Back, init
+from colorama import Fore, Back, Style, init
 init(autoreset=True)
 import os
 
@@ -26,8 +26,8 @@ def validar(valor):
         if valor!=0:
             while continuar==0:
                 print('-'*50)
-                print(Back.WHITE+Fore.RED+'El numero tiene que ser un numero positivo'.center(50,' '))
-                print(Back.WHITE+Fore.RED+'VUELVA A INGRESAR EL NUMERO O CERO PARA SALIR'.center(50,' '))
+                print(Style.BRIGHT+Back.WHITE+Fore.RED+'El numero tiene que ser un numero positivo'.center(50,' '))
+                print(Style.BRIGHT+Back.WHITE+Fore.RED+'VUELVA A INGRESAR EL NUMERO O CERO PARA SALIR'.center(50,' '))
                 print('-'*50)
                 valor=float(input('Ingrese un numero (ingrese 0 para salir): '))
                 if valor>=0:

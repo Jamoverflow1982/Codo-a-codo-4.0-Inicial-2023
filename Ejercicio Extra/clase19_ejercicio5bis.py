@@ -12,7 +12,6 @@ menú con estas opciones:
 ● 7 - Verificar cuál de los valores es el mayor.
 ● 8 - Salir.
 """
-op=0
 
 def titulo():
     print('='*50)
@@ -100,6 +99,7 @@ def opcion(num):
             print(f'{num} NO ES UNA OPCION VALIDA'.center(50,' '))
 
 titulo()
+op=0
 while op!=8:
     print('Ingrese operacion a realizar:\n1 - Suma\n2 - Resta\n3 - Multiplicación\n4 - División\n5 - Potencia\n6 - Verificar si ambos números son pares\n7 - Verificar cuál de los valores es el mayor\n8 - Salir')
     print()

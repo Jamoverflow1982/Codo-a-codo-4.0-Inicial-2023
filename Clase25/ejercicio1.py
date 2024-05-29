@@ -15,6 +15,9 @@ consistencia visual con los precios de los productos.
 from colorama import Style,Back,Fore,init
 init(autoreset=True)
 
+productos=[]
+val_productos=[]
+
 def titulo():
     print(Style.BRIGHT+Back.GREEN+Fore.WHITE+''.center(50,' '))
     print(Style.BRIGHT+Back.GREEN+Fore.WHITE+'TICKET DE COMPRA'.center(50,' '))
@@ -28,9 +31,7 @@ def gracias():
     print(Style.BRIGHT+Back.GREEN+Fore.WHITE+''.center(50,' '))
     print()
 
-def ingreso():
-    productos=[]
-    val_productos=[]
+def ingreso(productos, val_productos):
     while True:
         pro=input('\nIngrese el nombre del producto: ')
         productos.append(pro)
@@ -58,6 +59,6 @@ def listado(producto, precio):
     print(Style.BRIGHT+Back.RED+Fore.WHITE+f'TOTAL ${suma:.2f}'.rjust(50,' '))
 
 titulo()
-producto, precio=ingreso()
-listado(producto, precio)
+ingreso(productos, val_productos)
+listado(productos, val_productos)
 gracias()

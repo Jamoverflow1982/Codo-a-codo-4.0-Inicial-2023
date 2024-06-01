@@ -45,16 +45,16 @@ def ingreso(productos, val_productos):
             break
     return productos, val_productos
 
-def listado(producto, precio):
+def listado(productos, precios):
     suma=0
     print()
     print(Style.BRIGHT+Back.GREEN+Fore.WHITE+'TICKET DE COMPRA'.center(50,' '))
     print(Style.BRIGHT+Back.BLUE+Fore.WHITE+'Producto'.ljust(25,' '), end='')
     print(Style.BRIGHT+Back.BLUE+Fore.WHITE+'Precio'.rjust(25,' '))
-    for i in range (len(producto)):
-        print(f'{producto[i]}'.ljust(25,' ').capitalize(), end='')
-        print(f'${precio[i]:.2f}'.rjust(25,' '))
-        suma=suma+precio[i]
+    for producto, precio in zip(productos, precios):
+        print(f'{producto}'.ljust(25,' ').capitalize(), end='')
+        print(f'${precio:.2f}'.rjust(25,' '))
+        suma=suma+precio
     print()
     print(Style.BRIGHT+Back.RED+Fore.WHITE+f'TOTAL ${suma:.2f}'.rjust(50,' '))
 

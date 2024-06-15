@@ -19,17 +19,14 @@ import os
 screen='clear' #si es en windows cambiar por cls
 
 def mostrarLista(legajos):
-    emp=0
     print(Back.BLUE+Style.BRIGHT+Fore.WHITE+''.center(93,' '))
     print(Back.BLUE+Style.BRIGHT+Fore.WHITE+'LISTA DE EMPLEADOS'.center(93,' '))
     print(Back.BLUE+Style.BRIGHT+Fore.WHITE+''.center(93,' '))
     print(Back.LIGHTBLACK_EX+Fore.WHITE+' ___________________________________________________________________________________________ ')
     print(Back.LIGHTBLACK_EX+Fore.WHITE+Style.BRIGHT+'| Legajo |    Apellido    |     Nombre     |    DNI     |             Domicilio             |')
     print(Back.LIGHTBLACK_EX+Fore.WHITE+'|--------+----------------+----------------+------------+-----------------------------------|')
-    while emp < len(legajos):
-        for empleado in legajos:
-            print(Back.LIGHTBLACK_EX+Fore.WHITE+f'|{empleado["leg"]:8}|{empleado["apellido"]:16}|{empleado["nombre"]:16}|{empleado["dni"]:12}|{empleado["domicilio"]:35}|')
-            emp +=1
+    for empleado in legajos:
+        print(Back.LIGHTBLACK_EX+Fore.WHITE+f'|{empleado["leg"]:8}|{empleado["apellido"]:16}|{empleado["nombre"]:16}|{empleado["dni"]:12}|{empleado["domicilio"]:35}|')
     print(Back.LIGHTBLACK_EX+Fore.WHITE+' --------+----------------+----------------+------------+----------------------------------- ')
     print()
 
